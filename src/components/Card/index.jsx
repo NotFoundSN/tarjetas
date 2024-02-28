@@ -17,7 +17,7 @@ export default function Card() {
 		});
 	}, [name]);
 	useEffect(() => {
-		switch (invitation.connection) {
+		switch (invitation?.connection) {
 			case "revolucion":
 				setStyles({
 					bgBorderColor: "lgr-revolucion",
@@ -37,6 +37,10 @@ export default function Card() {
 				});
 				break;
 			default:
+				setStyles({
+					bgBorderColor: "bg-black",
+					bgBackgroundColor: "bg-white",
+				});
 				break;
 		}
 	}, [invitation]);
