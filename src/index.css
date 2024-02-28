@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.lgr-revolucion {
+	background: repeating-linear-gradient(
+		45deg,
+		theme("colors.revolucion.verdeLima"),
+        theme("colors.revolucion.negro"),
+		theme("colors.revolucion.violeta") 1rem
+	);
+}
+
+.lgr-muni {
+	background: repeating-linear-gradient(
+		45deg,
+		theme("colors.muni.celesteClaro"),
+		theme("colors.muni.blanco") 1rem
+	);
+}
+.lgr-friends {
+	background: repeating-linear-gradient(
+		45deg,
+		theme("colors.friends.rojo"),
+		theme("colors.friends.naranja") 1rem
+	);
+}
