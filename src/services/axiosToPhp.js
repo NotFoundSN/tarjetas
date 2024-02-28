@@ -4,6 +4,9 @@ import axios from "axios";
 
 const config = axios.create({
 	baseURL: "http://coiote.ar/api/",
+	headers: {
+		"Content-Security-Policy": "upgrade-insecure-requests",
+	},
 });
 
 const APIquery = {
