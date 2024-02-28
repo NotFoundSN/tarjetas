@@ -7,6 +7,7 @@ function App() {
 		<BrowserRouter>
 			<Routes>
 				<Route path="/" element={<Layout />}>
+					<Route index element={<><div>web funcionando</div></>} />
 					<Route path="/invitation/:name" element={<Card />} />
 				</Route>
 			</Routes>
