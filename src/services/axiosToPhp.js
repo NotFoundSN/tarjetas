@@ -7,8 +7,9 @@ const config = axios.create({
 	baseURL: "https://revoluciondigital.alwaysdata.net/api/",
 	headers: {
 		"Content-Type": "application/json",
-            	"Access-Control-Allow-Origin": "*",
-            	"Access-Control-Allow-Headers": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+		"Access-Control-Allow-Origin": "*",
+		"Access-Control-Allow-Headers":
+			"Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
 	},
 });
 

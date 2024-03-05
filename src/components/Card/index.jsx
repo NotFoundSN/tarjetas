@@ -53,17 +53,17 @@ export default function Card() {
 					>
 						<div className="w-full">
 							<p className=" text-left text-xl">
-								{invitation.name} te invito a mi cumpleaños
+								Hola <span className=" font-bold">{invitation.name}</span> te invito a mi cumpleaños
 							</p>
 						</div>
 						<div className="w-full">
 							<p className=" text-right text-2xl pt-4">
-								el {invitation.day} a las {invitation.hour}
+								el <span className=" font-bold">{invitation.day}</span> a las <span className=" font-bold">{invitation.hour}</span>
 							</p>
 						</div>
 						<div className="w-full">
 							<p className=" text-left text-xl pt-8">
-								en {invitation.place}
+								en <span className=" font-bold">{invitation.place}</span>
 							</p>
 						</div>
 						<div className=" mt-4 bg-gray-200 rounded z-20 w-4/5">
