@@ -1,9 +1,10 @@
 import axios from "axios";
 
 //http://coiote.ar/api/cumple.php?nickname=nolo
+//https://revoluciondigital.alwaysdata.net/api/cumple.php?nickname=nolo
 
 const config = axios.create({
-	baseURL: "http://coiote.ar/api/",
+	baseURL: "https://revoluciondigital.alwaysdata.net/api/",
 	headers: {
 		"Content-Security-Policy": "upgrade-insecure-requests",
 	},
