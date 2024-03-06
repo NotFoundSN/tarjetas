@@ -6,7 +6,7 @@
 	background: repeating-linear-gradient(
 		45deg,
 		theme("colors.revolucion.verdeLima"),
-        theme("colors.revolucion.negro"),
+		theme("colors.revolucion.negro"),
 		theme("colors.revolucion.violeta") 1rem
 	);
 }
@@ -22,6 +22,7 @@
 	background: repeating-linear-gradient(
 		45deg,
 		theme("colors.friends.rojo"),
-		theme("colors.friends.naranja") 1rem
+		theme("colors.friends.naranja"),
+		theme("colors.friends.morado") 1.5rem
 	);
 }

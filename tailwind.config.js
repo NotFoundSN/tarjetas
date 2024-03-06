@@ -13,7 +13,8 @@ export default {
 					rojo: "#FF0000",
 					naranja: "#FFA500",
 					morado: "#800080",
-					verde: "#008000",
+					verde: "#7CFC00",
+
 				},
 				revolucion: {
 					verdeLima: "#c6e100",
