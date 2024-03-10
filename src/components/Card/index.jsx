@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { Carrousel } from "@Components";
 import axios from "@Services/axiosToPhp";
 import clow from "@Assets/payaso.png";
 
 export default function Card() {
+	const navigate = useNavigate();
 	const [invitation, setInvitation] = useState({});
 	const [styles, setStyles] = useState({
 		bgBorderColor: "bg-black",
@@ -13,7 +14,15 @@ export default function Card() {
 	let { name } = useParams();
 	useEffect(() => {
 		axios.getGuest(name).then((res) => {
-			setInvitation(res);
+			if (res.code == "ERR_NETWORK")
+			{
+				navigate("/error");
+			}
+			else
+			{
+				setInvitation(res);
+			}
+			
 		});
 	}, [name]);
 	useEffect(() => {

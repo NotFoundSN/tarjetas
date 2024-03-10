@@ -1,5 +1,4 @@
 import axios from "axios";
-
 //http://coiote.ar/api/cumple.php?nickname=nolo
 //https://revoluciondigital.alwaysdata.net/api/cumple.php?nickname=nolo
 
@@ -23,6 +22,7 @@ const APIquery = {
 			})
 			.catch((error) => {
 				console.log(error);
+				return error;
 			});
 		return guest;
 	},
