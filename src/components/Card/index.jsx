@@ -22,18 +22,21 @@ export default function Card() {
 				setStyles({
 					bgBorderColor: "lgr-revolucion",
 					bgBackgroundColor: "bg-revolucion-verdeAgua",
+					buttonColor: "bg-revolucion-verde",
 				});
 				break;
 			case "muni":
 				setStyles({
 					bgBorderColor: "lgr-muni",
 					bgBackgroundColor: "bg-muni-celesteApagado",
+					buttonColor: "bg-muni-celeste",
 				});
 				break;
 			case "amigo":
 				setStyles({
 					bgBorderColor: "lgr-friends",
 					bgBackgroundColor: "bg-friends-verde",
+					buttonColor: "bg-friends-verdeOscuro",
 				});
 				break;
 			default:
@@ -53,7 +56,7 @@ export default function Card() {
 					<div
 						className={`w-full h-full p-4 relative ${styles.bgBackgroundColor} rounded-md flex flex-col items-center`}
 					>
-						<div className="w-full sm:w-1/2">
+						<div className="w-full sm:w-1/2 z-40">
 							<div className="w-full">
 								<p className=" text-left text-xl">
 									Hola{" "}
@@ -74,6 +77,9 @@ export default function Card() {
 										{invitation.hour}
 									</span>
 								</p>
+							</div>
+							<div className="w-full flex justify-center mt-4 sm:mt-0 sm:flex-none sm:w-auto sm:absolute sm:top-1/2 sm:left-1/2 ">
+								<button className=" bg-red-500 p-2 rounded-xl border border-black font-bold">Confirmar</button>
 							</div>
 							<div className="w-full">
 								<p className=" text-left text-xl pt-8">

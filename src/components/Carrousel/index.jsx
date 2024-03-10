@@ -29,7 +29,7 @@ export default function Carrousel({ QAlist = [], ...otherProps }) {
 							<div className="text-center bg-gray-400">
 								<span className=" font-semibold">{item.answer}</span>
 							</div>
-							<div className="flex flex-row text-center justify-center items-center pt-4 p-2">
+							<div className="flex flex-row text-center justify-center items-center pt-4 p-2 z-30">
 								<span className=" font-bold">{parse(item.question)}</span>
 							</div>
 						</div>

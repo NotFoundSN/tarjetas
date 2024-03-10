@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Layout, Card } from "@Components";
+import { Layout, Card, Card404 } from "@Components";
 //import { Arena, Clones, Trans, Unite } from "@Pages";
 
 function App() {
@@ -9,6 +9,8 @@ function App() {
 				<Route path="/" element={<Layout />}>
 					<Route index element={<><div>web funcionando</div></>} />
 					<Route path="invitation/:name" element={<Card />} />
+					<Route path="error" element={<Card404 />} />
+					<Route path="*" element={<Card404 />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>

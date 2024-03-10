@@ -26,5 +26,17 @@ const APIquery = {
 			});
 		return guest;
 	},
+	getConfirm: async (name) => {
+		let link = `confirm.php?nickname=${name}`;
+		let guest = await config
+			.get(link)
+			.then((res) => {
+				return res.data;
+			})
+			.catch((error) => {
+				console.log(error);
+			});
+		return guest;
+	},
 };
 export default APIquery;
